@@ -1,0 +1,60 @@
+{
+  "name": "@dhanraj16/uploadnest-sdk",
+  "version": "1.0.1",
+  "description": "The official TypeScript library for the Uploadnest API",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "/dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./errors": {
+      "import": "./dist/errors.mjs",
+      "require": "./dist/errors.cjs"
+    },
+    "./types": {
+      "import": "./dist/types.mjs",
+      "require": "./dist/types.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "clean": "rimraf dist",
+    "changeset": "npx changeset",
+    "version-packages": "npx changeset version",
+    "release": "npm run build && npm run version-packages && npx changeset publish",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "repository": {
+    "url": "git+https://github.com/dhanrajsingh16/Uploadnest-npm.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "uploadnest",
+    "file-upload",
+    "storage",
+    "typescript",
+    "nodejs",
+    "nextjs"
+  ],
+  "author": "Dhanraj Singh",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@dhanraj16/uploadnest-sdk": "^1.0.1",
+    "form-data": "^4.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  },
+  "bugs": {
+    "url": "https://github.com/dhanrajsingh16/Uploadnest-npm.git"
+  },
+  "homepage": "https://github.com/dhanrajsingh16/Uploadnest-npm"
+}
