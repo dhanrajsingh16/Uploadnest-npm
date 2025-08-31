@@ -125,6 +125,10 @@ const result: UploadFileResponse = await client.uploadFiles(files);
 - **Browsers**: Modern browsers with fetch support
 - **Next.js**: 13+ (App Router recommended)
 
+## Website
+
+https://www.npmjs.com/package/@dhanraj16/uploadnest-sdk
+
 ## License
 
 Apache-2.0
